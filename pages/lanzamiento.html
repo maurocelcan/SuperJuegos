@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Lanzamiento</title>
+</head>
+<body>
+    <!--LOADER-->
+    <div class="loader-container">
+        <div class="loader">
+            <p>Cargando...</p>
+            <p class="porcentaje">1%</p>
+        </div>
+    </div>
+    <!--LANZAMIENTO MAIN-->
+    <div class="main">
+        <!--HEADER-->
+        <header class="grid-header">
+            <div class="header-a1">
+                <div class="divMenuHamburguesa" id="divMenuHamburguesa">
+                    <div class="btn not-active" id="btn-menu">
+                        <span id="cruz"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>   
+                <div>
+                    <a href="../index.html"><img class="logoSuperJuegos" src="../css/images/images/logoSuperJuegos.png" alt="Logo Super Juegos"></a>
+                </div>
+                <div class="nombre">
+                    <a href="../index.html"> <p>Super Juegos</p> </a>
+                </div> 
+            </div>      
+            <div class="header-a2">
+                <div class="container-input">
+                    <input type="search" id="search" placeholder="Buscar "/>
+                    <img src="../css/images/images/lupa.png" alt="Lupa">
+                </div>  
+            </div>
+            <div class="header-a3">
+                <div>
+                    <img class="carritoCompras" src="../css/images/images/shoppingcart.png" alt="Carrito de compras">
+                </div>   
+                <div id="btn-profile" class="userDiv">
+                    <img class="user" src="../css/images/images/user.png" alt="Usuario">
+                </div>
+                <ul id="nav-profile">
+                    <li>
+                        <img src="../css/images/images/profile.png" alt="Usuario">
+                        <span><a>Perfil</a></span>
+                    </li>
+                    <li>
+                        <img src="../css/images/images/ajustes.png" alt="Ajustes">
+                        <span><a>Ajustes</a></span>
+                    </li>
+                    <li>
+                        <img src="../css/images/images/cerrarsesion.png" alt="Botón de cerrar sesión">
+                        <span><a>Cerrar Sesión</a></span>
+                    </li>
+                    <li class="li-redes">
+                        <span class="redes">
+                            <img src="../css/images/images/tik-tok.png" alt="Tik Tok">
+                            <img src="../css/images/images/facebook.png" alt="Facebook">
+                            <img src="../css/images/images/instagram.png" alt="Instagram">
+                        </span>
+                    </li>
+                </ul> 
+            </div>
+            <nav id="nav" class="site-nav-closed">
+                <ul class="dropdown_menu">
+                    <li class="dropdown_item-1">
+                        <img src="../css/images/images/corazon.png" alt="Corazón">
+                        <span><a>Favoritos</a></span>
+                    </li>
+                    <li class="dropdown_item-2">
+                        <img src="../css/images/images/accion.png" alt="Llama">
+                        <span><a>Acción</a></span>
+                    </li>
+                    <li class="dropdown_item-3">
+                        <img src="../css/images/images/autos.png" alt="Volante de auto">
+                        <span><a>Autos</a></span>
+                    </li>
+                    <li class="dropdown_item-4">
+                        <img src="../css/images/images/escalador.png" alt="Escalador">
+                        <span><a>Aventura</a></span>
+                    </li>
+                    <li class="dropdown_item-5">
+                        <img src="../css/images/images/belleza.png" alt="Tijera de barbaría">
+                        <span><a>Belleza</a></span>
+                    </li>
+                    <li class="dropdown_item-6">
+                        <img src="../css/images/images/clasicos.png" alt="Gamepad">
+                        <span><a>Clásicos</a></span>
+                    </li>
+                    <li class="dropdown_item-7">
+                        <img src="../css/images/images/deportes.png" alt="Pelota de Basquet">
+                        <span><a>Deportes</a></span>
+                    </li>
+                    <li class="dropdown_item-8">
+                        <img src="../css/images/images/disparos.png" alt="Arco y flecha">
+                        <span><a>Disparos</a></span>
+                    </li>
+                    <li class="dropdown_item-9">
+                        <img src="../css/images/images/estrategia.png" alt="Caballo de ajedrez">
+                        <span><a>Estrategia</a></span>
+                    </li>
+                    <li class="dropdown_item-10">
+                        <img src="../css/images/images/nuevo.png" alt="Estrellas">
+                        <span><a>Nuevos</a></span>
+                    </li>
+                    <li class="dropdown_item-11">
+                        <img src="../css/images/images/terror.png" alt="Mascara de terror">
+                        <span><a>Terror</a></span>
+                    </li>
+                    <li class="fin-categorias-li dropdown_item-12">
+                        <img src="../css/images/images/multijugador.png" alt="Dos usuarios">
+                        <span class="fin-categorias"><a>2 Jugadores</a></span> 
+                    </li>
+                    <span class="li-user">
+                        <li class="dropdown_item-13">
+                            <img src="../css/images/images/profile.png" alt="Usuario">
+                            <span><a>Perfil</a></span>
+                        </li>
+                        <li class="dropdown_item-14">
+                            <img src="../css/images/images/ajustes.png" alt="Ajustes">
+                            <span><a>Ajustes</a></span>
+                        </li>
+                        <li class="dropdown_item-15">
+                            <img src="../css/images/images/shoppingcart.png" alt="Carrito de compras">
+                            <span><a>Carrito</a></span>
+                        </li>
+                        <li class="dropdown_item-16">
+                            <img src="../css/images/images/cerrarsesion.png" alt="Botón de cerrar sesión">
+                            <span><a>Cerrar Sesión</a></span>
+                        </li>
+                        <li class="li-redes dropdown_item-17">
+                            <span class="redes">
+                                <img src=../css/images/images/tik-tok.png" alt="Tik Tok">
+                                <img src="../css/images/images/facebook.png" alt="Facebook">
+                                <img src="../css/images/images/instagram.png" alt="Instagram">
+                            </span>
+                        </li>
+                    </span>
+                </ul>
+            </nav>          
+        </header>
+
+        <!--LANZAMIENTO-CONTENEDOR-->
+        <div class="lanzamiento-grid-container">
+            <!--NUBES-->
+            <div class="nube"></div>
+            <div class="nube"></div>
+            <div class="nube"></div>
+            <div class="nube"></div>
+            <div class="humo">
+                <img src="/css/images/humo2.png" alt="">
+            </div>
+            <!--LANZAMIENTO-CONTENEDOR->MAIN-->
+            <main class="lanzamiento-main">
+                <div class="lanzamiento-inicio-pubg">
+                    <h1 class="lanzamiento-inicio-pubg-h1">¡Aterriza, saquea y sobrevive!</h1>
+                    <p class="lanzamiento-inicio-pubg-p">Jugá gratis PUBG: Battlegrounds Proximamente</p>
+                    <button id="btn-avisame" class="btnLanzamiento lanzamiento-inicio-pubg-btn"><span>Avísame</span></button>    
+                </div>
+                <div class="lanzamiento-pubg-logo">
+                    <img src="../css/images/pubgpng.png" alt="">
+                </div>
+                <div class="lanzamiento-end-text">
+                    <h3>Aterriza en posiciones estratégicas, saquea armas y suministros, y sobrevive para que tu equipo sea el único en pie en los distintos y variados campos de batalla.</h3>
+                </div>
+            </main>
+            <!--LANZAMIENTO->FEATURES-->
+            <div class="lanzamiento-features">
+                <div class="lanzamiento-features-images-inicio">
+                    <h1>Arma tu clan, podes jugar en equipos de hasta 4 personas</h1>
+                    <div class="lanzamiento-features-images-inicio-carrusel">
+                        <div>
+                            <img src="../css/images/Lanzamiento Chica 1.jpg" alt="">
+                        </div>
+                        <div>
+                            <img src="../css/images/Imagen Chica 3.webp" alt="">
+                        </div>
+                        <div>
+                            <img src="../css/images/Imagen Chica 2.webp" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="lanzamiento-features-maps">
+                    <h1>Elegí el mapa que mas te gusta para la batalla</h1>
+                    <div class="lanzamiento-features-maps-erangel mapa-juego">
+                        <img src="../css/images/erangel.png" alt="">
+                        <div class="lanzamiento-erangel-description">
+                            <h2>Erangel</h2>
+                            <p>Batalla en el Mar Ngero! <br> Area de  8x8 km donde encontraras bases militares, escuelas, prisiones y mucho mas.</p>
+                        </div>
+                    </div>
+                    <div class="lanzamiento-features-maps-miramar mapa-juego">
+                        <img src="../css/images/miramar.png" alt="">
+                        <div class="lanzamiento-miramar-description">
+                            <h2>Miramar</h2>
+                            <p>Preparate para luchar en el desierto mexicano!En este mapa prendomina el combate a larga distancia, por lo que necesitaras estar bien equipado!</p>
+                        </div>
+                    </div>
+                    <div class="lanzamiento-features-maps-vikendi mapa-juego">
+                        <img src="../css/images/Vikendi.png" alt="">
+                        <div class="lanzamiento-vikendi-description">
+                            <h2>Vikendi</h2>
+                            <p>Un isla completamente nevada te esepra donde encontrarás castillos y fábricas abandonadas, además podras transportarte con exclusivos vehiculos para la nieve.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>      
+            <!--LANZAMIENTO->CARRUSEL-->      
+            <div class="lanzamiento-slider">
+                <h1 id="titulo-personajes">Elegi tu personaje, accesorios y más!</h1>
+                <div class="lanzamiento-slide-track">
+                    
+                    <div class="lanzamiento-slide">
+                        <h1>Victor</h1>
+                        <p>Si te gusta ir al combate enprimera linea entonces Victor es tu mejor opcion. Su habilidad para la batalla essu caracter mas destacable</p>
+                        <img src="../css/images/personaje1.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Jai</h1>
+                        <p>Jai se destaca por su destrezae inteligencia para resolver cualquier problemaque tenga su equipo</p>
+                        <div id="spritesheet"></div>
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Andy</h1>
+                        <p>Su fuerza e inteligencia combinado con un buen equipamiento te permitirá lucirte durante la batalla.</p>
+                        <img class="lanzamiento-sara"src="../css/images/personaje3.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Patrick</h1>
+                        <p>Nadie es tan veloz como Patrick, con éste personaje no va a ser fácil que te atrapen.</p>
+                        <img src="../css/images/personaje4.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide pj-position">
+                        <h1>Carlo</h1>
+                        <p>Su mayor habilidad es su capacidad para camuflarse, úsalo y llegarás hasta el final de la batalla.</p>
+                        <img src=../css/images/personaje5.png alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Victor</h1>
+                        <p>Si te gusta ir al combate enprimera linea entonces Victor es tu mejor opcion. Su habilidad para la batalla essu caracter mas destacable</p>
+                        <img src="../css/images/personaje1.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Jai</h1>
+                        <p>Jai se destaca por su destrezae inteligencia para resolver cualquier problemaque tenga su equipo</p>
+                        <div id="spritesheet"></div>
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Andy</h1>
+                        <p>Su fuerza e inteligencia combinado con un buen equipamiento te permitirá lucirte durante la batalla.</p>
+                        <img src="../css/images/personaje3.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Patrick</h1>
+                        <p>Nadie es tan veloz como Patrick, con éste personaje no va a ser fácil que te atrapen.</p>
+                        <img src="../css/images/personaje4.png" alt="">
+                    </div>
+                    <div class="lanzamiento-slide">
+                        <h1>Carlo</h1>
+                        <p>Su mayor habilidad es su capacidad para camuflarse, úsalo y llegarás hasta el final de la batalla.</p>
+                        <img src=../css/images/personaje5.png alt="">
+                    </div>
+                </div>
+            </div>
+            <!--LANZAMIENTO->INFORMACION-->
+
+            <div class="lanzamiento-pubg-info">
+                <h1>Te contamos un poco sobre PUGB...</h1>
+                <div class="contenedor-border">
+                    <div class="scroll-reveal-section">
+
+                        <div class="item">
+                            <div class="image-holder">
+                                <img src="../css/images/paracaidas.png" alt="">   
+                            </div>
+                            <div class="lanzamiento-pubg-info-description text-holder">
+                                <p>
+                                    PUBG: Battlegrounds es un videojuego de batalla en línea multijugador masivo desarrollado por PUBG Studios. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-holder" >
+                                <img src="../css/images/scroll-1.jpg" alt="">   
+                            </div>
+                            <div class="lanzamiento-pubg-info-description text-holder">
+                                <p>
+                                    Cien jugadores saltarán en paracaídas desde un avión a una isla, donde podran buscar armas y equipamiento para luchar contra otros jugadores mientras evitan ser asesinados. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-holder">
+                                <img src="../css/images/scroll-2.jpg" alt="">   
+                            </div>
+                            <div class="lanzamiento-pubg-info-description text-holder">
+                                <p>
+                                    Pero cuidado! El área  disponible de la isla irá disminuyendo durante la partida, dirigiendo a los sobrevivientes a áreas reducidas. El último jugador o equipo en pie gana la partida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>            
+
+                </div> 
+            </div>
+            <!--CARRUSELES-->
+            <section class="section-carruseles">
+
+                <div class="juegos-mostrados contenedor">
+                    <div class="contenedor-titulo-controles">
+                        <h3>Recientes</h3>
+                        <div id="indicadores-1" class="indicadores">
+                        </div>
+                    </div>
+                    <div class="contenedor-principal">
+                        <button role="button" id="flecha-izquierda-1" class="flecha-izquierda">&#10094</button>
+                        <div id="contenedor-carrusel-1" class="contenedor-carrusel">
+                            <div id="carrusel-1" class="carrusel">
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/fireandwater.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/crazylunch.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/amongus.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angelstreasure.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angrycubes.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angryfrozencubes.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angrymonters.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="pages/4enLinea.html"><img src="../css/images/imagenes_carrusel/arcosvsespadas.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/boxingrandom.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/bubble.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/deadzed2.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/cartoongames.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/colorrobots.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/cookwithbush.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/countdonnuts.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button role="button" id="flecha-derecha-1" class="flecha-derecha">&#10095</button>
+                    </div>
+                </div>
+            </section>
+            <!--FOOTER-->
+            <footer class="fatFooter">
+                <ul>
+                    <a href="../index.html"><img src="../css/images/images/logoSuperJuegos.png"></a>
+                </ul>
+                <ul>
+                    <li>General</li>
+                    <li>Caracteristicas de juegos</li>
+                    <li>Mapa del sitio</li>
+                    <li>Home</li>
+                </ul>
+                <ul>
+                    <li>Informacion</li>
+                    <li>Condiciones de uso</li>
+                    <li>Referencia de cookies</li>
+                    <li>Privacidad</li>
+                    <li>Políticas de Privacidad</li>
+                    <li>Informacion para los padres</li>
+                    <li>Ayuda</li>
+                </ul>
+                <ul>
+                    <li>Idiomas</li>
+                    <li>Español</li>
+                    <li>Ingles</li>
+                    <li>Portugues</li>
+                    <li>Frances</li>
+                    <li>Aleman</li>
+                    <li>Italiano</li>
+                </ul>
+                <ul>
+                    <li>Sobre nosotros</li>
+                    <li>Desarrolladores</li>
+                    <li>Contacto</li>
+                    <li>support@superjuegos.com</li>
+                    <li>Subscribite</li>
+                </ul>
+                <ul>
+                    <li>Comunidad</li>
+                    <li>Foro</li>
+                    <li>Blog</li>
+                    <div>
+                        <img src="../css/images/images/tik-tok.png" alt="">
+                        <img src="../css/images/images/instagram.png" alt="">
+                        <img src="../css/images/images/facebook.png" alt="">
+                    </div>
+                </ul>
+                <ul id="scrollToTop">
+                    <img src="../css/images/images/angulo-hacia-arriba.png" alt="" >
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/animacionLanzamiento.js"></script>  
+    <script src="../js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>4 en Linea</title>
+	</head>
+
+
+	<body>
+        <!--LOADER-->
+		<div class="loader-container">
+			<div class="loader">
+				<p>Cargando...</p>
+				<p class="porcentaje">1%</p>
+			</div>
+		</div>
+        <!--CONTENEDOR GENERAL-->
+		<div class="contenedor-general">
+            <!--HEADER-->
+			<header class="grid-header">
+				<div class="header-a1">
+                    <div class="divMenuHamburguesa">
+                        <div class="btn not-active" id="btn-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>     
+                    <div>
+                        <a href="../index.html"><img class="logoSuperJuegos" src="../css/images/images/logoSuperJuegos.png" alt="Logo Super Juegos"></a>
+                    </div>
+                    <div class="nombre">
+                       <a href="../index.html"> <p>Super Juegos</p> </a> 
+                    </div> 
+                </div>      
+                <div class="header-a2">
+                    <div class="container-input">
+                        <input type="search" id="search" placeholder="Buscar "/>
+                        <img src="../css/images/images/lupa.png" alt="Lupa">
+                    </div>  
+                </div>
+                <div class="header-a3">
+                    <div>
+                        <img class="carritoCompras" src="../css/images/images/shoppingcart.png" alt="Carrito de compras">
+                    </div>   
+                    <div id="btn-profile" class="userDiv">
+                        <img class="user" src="../css/images/images/user.png" alt="Usuario">
+                    </div>
+                    <ul id="nav-profile">
+                        <li>
+                            <img src="../css/images/images/profile.png" alt="Usuario">
+                            <span><a>Perfil</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/ajustes.png" alt="Ajustes">
+                            <span><a>Ajustes</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/cerrarsesion.png" alt="Botón de cerrar sesión">
+                            <span><a>Cerrar Sesión</a></span>
+                        </li>
+                        <li class="li-redes">
+                            <span class="redes">
+                                <img src="../css/images/images/tik-tok.png" alt="Tik Tok">
+                                <img src="../css/images/images/facebook.png" alt="Facebook">
+                                <img src="../css/images/images/instagram.png" alt="Instagram">
+                            </span>
+                        </li>
+                    </ul> 
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <img src="../css/images/images/corazon.png" alt="Corazón">
+                            <span><a>Favoritos</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/accion.png" alt="Llama">
+                            <span><a>Acción</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/autos.png" alt="Volante de auto">
+                            <span><a>Autos</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/escalador.png" alt="Escalador">
+                            <span><a>Aventura</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/belleza.png" alt="Tijera de barbaría">
+                            <span><a>Belleza</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/clasicos.png" alt="Gamepad">
+                            <span><a>Clásicos</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/deportes.png" alt="Pelota de Basquet">
+                            <span><a>Deportes</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/disparos.png" alt="Arco y flecha">
+                            <span><a>Disparos</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/estrategia.png" alt="Caballo de ajedrez">
+                            <span><a>Estrategia</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/nuevo.png" alt="Estrellas">
+                            <span><a>Nuevos</a></span>
+                        </li>
+                        <li>
+                            <img src="../css/images/images/terror.png" alt="Mascara de terror">
+                            <span><a>Terror</a></span>
+                        </li>
+                        <li class="fin-categorias-li">
+                            <img src="../css/images/images/multijugador.png" alt="Dos usuarios">
+                            <span class="fin-categorias"><a>2 Jugadores</a></span> 
+                        </li>
+                        <span class="li-user">
+                            <li>
+                                <img src="../css/images/images/profile.png" alt="Usuario">
+                                <span><a>Perfil</a></span>
+                            </li>
+                            <li>
+                                <img src="../css/images/images/ajustes.png" alt="Ajustes">
+                                <span><a>Ajustes</a></span>
+                            </li>
+                            <li>
+                                <img src="../css/images/images/shoppingcart.png" alt="Carrito de compras">
+                                <span><a>Carrito</a></span>
+                            </li>
+                            <li>
+                                <img src="../css/images/images/cerrarsesion.png" alt="Botón de cerrar sesión">
+                                <span><a>Cerrar Sesión</a></span>
+                            </li>
+                            <li class="li-redes">
+                                <span class="redes">
+                                    <img src="../css/images/images/tik-tok.png" alt="Tik Tok">
+                                    <img src="../css/images/images/facebook.png" alt="Facebook">
+                                    <img src="../css/images/images/instagram.png" alt="Instagram">
+                                </span>
+                            </li>
+                        </span>
+                    </ul>
+                </nav>
+			</header>
+			<h3>
+                <a href="../index.html">Juegos</a> > <a href="../pages/4enlinea.html">Arcos vs Espadas</a>
+            </h3>
+            <!--CUATRO EN LINEA-->
+			<section class="cuatroEnLinea">
+				<div class="contenedor-juego-aside">
+					<h4> Arcos vs Espadas </h4>
+                    
+					<div class="container-juego">
+                        <h4 id="timer" class="ocultar">Tiempo restante:</h4>
+						<div class="flex-canvas ocultar" id="canvas-container">
+							<canvas id="canvas" width="750" height="490"></canvas>
+						</div>
+                        <div id ="configuracionJuego" class="flex-conf">
+                            <div>
+                                <div class="select-fichas">
+                                    <select class="form-select" id="fichaJ1" name="fichaJ1" aria-label="Default select example">
+                                        <option  value="../css/images/imagenes_4enlinea/espada.png">Espada Azul</option>
+                                        <option  value="../css/images/imagenes_4enlinea/espadaRoja.png">Espada Roja</option>
+                                    </select>
+                                    <h1>vs</h1>
+                                    <select class="form-select" id="fichaJ2" name="fichaJ2" aria-label="Default select example">
+                                        <option  value="../css/images/imagenes_4enlinea/arco&flecha.png">Arco Naranja</option>
+                                        <option  value="../css/images/imagenes_4enlinea/arrow&bow.png">Flecha Roja</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="btnIniciar">Jugar</button>
+
+                            <select id="modojuego">
+                                <option value="4">4 en línea</option>
+                                <option value="5">5 en línea</option>
+                                <option value="6">6 en línea</option>
+                                <option value="7">7 en línea</option>
+                            </select>
+                        </div>
+                        <button id="btnReIniciar" class="reiniciar ocultar">Reinicar Juego</button>
+					</div>
+					<div class="footerJuego">
+						<div><img src="../css/images/images/volume-free-icon-font (1).png" alt=""> <!--imagen de volumen--></div>
+						<div>
+							<div id="redesJuego" class="redesJuego">
+								<img src="../css/images/images/envelope-free-icon-font.png" alt="">
+								<img src="../css/images/images/facebook.png" alt="">
+								<img src="../css/images/images/tik-tok.png" alt="" srcset="">
+								<img src="../css/images/images/instagram.png" alt="" srcset="">
+							</div>
+							<div id="compartir"><img src="../css/images/images/share-free-icon-font.png" alt=""> </div><!-- imagen de redes-->
+							<div><img src="../css/images/images/heart-free-icon-font.png" alt=""></div> <!-- imagen de favoritos-->
+							<div><img src="../css/images/images/expand-free-icon-font.png" alt=""></div>   <!-- imagen de pantalla completa--> 
+						</div>
+					</div>
+				</div>
+				<aside>
+                    <div><img src="../css/images/images/4enLinea1.png" alt=""></div>
+                    <div><img src="../css/images/images/4enLinea2.png" alt=""></div>
+                    <div><img src="../css/images/images/4enLinea3.png" alt=""></div>
+                </aside>
+			</section>
+
+            <!--CUATRO EN LINEA-> DESCRIPCION-->
+			<section class="description">
+                <div><h1>Cómo jugar</h1></div>
+                <p>
+                    El objetivo de cada jugador será lograr completar una <span class="bold"> seguidilla de 4 fichas</span>
+                    propias, de forma vertical, horizontal o diagonal.
+                    El primer turno lo tendrá el jugador 1 (jugador de la izquierda) y esto lo habilitará a colocar la ficha en el tablero. Para esto, una vez decidido sobre que
+                    columna se quiere poner la ficha, se debe dejar caer la ficha desde arriba de la columna elegida del tablero. 
+                    Una vez que la ficha este en el tablero, se habilitará el turno del jugador 2 (jugador de la derecha). 
+                    Esto proseguirá hasta que termine el tiempo de la partida, haya un ganador o no hayan mas fichas por tirar en el tablero.
+                    El jugador podrá elegir entre dos equipos: Arcos & Flechas o Espadas. Dentro de cada equipo podrá encontrar distintos tipos de fichas.
+                    El jugador podrá también elegir que tipo de modo quiere jugar: 4 en linea, 5 en linea, 6 en linea o 7 en linea. 
+                    Si por ejemplo elije 6 en línea entonces deberá hacer una seguidilla de 6 fichas propias.  
+                </p> 
+            </section>
+            <section class="description">
+                <div>
+                    <h1>Historia</h1>
+                    <img src="../css/images/images/info-free-icon-font.png" alt="">
+                </div>
+                <p>Hace muchos años dos imperios se enfrentaron para lograr quedarse con el territorio enemigo. Hoy en día sigue esa guerra, la cual no logra definirse. 
+                    Para lograr ganar la batalla, buscan una estrategia donde linean 4 bloques de sus ejercitos para formar un pelotón invensible. ¿Los ayudas en esta tarea?</p>
+            </section>
+
+            <!--CUATRO EN LINEA-> COMENTARIOS Y PUBLICIDAD-->
+            <div class="comentariosYPublicidad">
+                <section class="expUsuario">
+                    <div class="formComentario">
+                        <h1>Te gustó el juego?</h1>
+                        <div>
+                            <h2>Dejanos tu comentario</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                            </div>
+                            <div>
+                                <img src="../css/images/images/paper-plane-free-icon-font.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <article class="comentarios">
+                        <h1>Comentarios</h1>
+                        <ul>
+                            <li>
+                                <div>
+                                    <h2>Eduardo:</h2> 
+                                    <p>El juego está muy bueno</p>
+                                </div>
+                                <div>
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <hr>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <h2>Juan:</h2> 
+                                    <p>Tiene chiches muy buenos! tanto para jugar de a uno como con un amigo, cada uno lo puede hacer desde el lugar que esté, sin la necesidad de coordinar un horario</p>
+                                </div>
+                                <div>
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                    <hr>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div>
+                                    <h2>Cruz:</h2> 
+                                    <p>Basicon, nada nuevo</p>
+                                </div>
+                                <div>
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font (1).png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                    <img src="../css/images/images/star-free-icon-font.png" alt="" srcset="">
+                                    <hr>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <div class="publicidad">
+                </div>
+            </div>
+            <!--CUATRO EN LINEA-> CARRUSELES-->
+			<section class="section-carruseles">
+
+                <div class="juegos-mostrados contenedor">
+                    <div class="contenedor-titulo-controles">
+                        <h3>Recientes</h3>
+                        <div id="indicadores-1" class="indicadores">
+                        </div>
+                    </div>
+                    <div class="contenedor-principal">
+                        <button role="button" id="flecha-izquierda-1" class="flecha-izquierda">&#10094</button>
+                        <div id="contenedor-carrusel-1" class="contenedor-carrusel">
+                            <div id="carrusel-1" class="carrusel">
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/fireandwater.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/crazylunch.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/amongus.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angelstreasure.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angrycubes.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angryfrozencubes.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/angrymonters.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="pages/4enLinea.html"><img src="../css/images/imagenes_carrusel/arcosvsespadas.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/boxingrandom.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/bubble.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/deadzed2.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/cartoongames.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/colorrobots.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/cookwithbush.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/countdonnuts.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button role="button" id="flecha-derecha-1" class="flecha-derecha">&#10095</button>
+                    </div>
+                </div>
+
+                <div class="juegos-mostrados contenedor">
+                    <div class="contenedor-titulo-controles">
+                        <h3>Nuevos</h3>
+                        <div id="indicadores-2" class="indicadores">
+                        </div>
+                    </div>
+                    <div class="contenedor-principal">
+                        <button role="button" id="flecha-izquierda-2" class="flecha-izquierda">&#10094</button>
+                        <div id="contenedor-carrusel-2" class="contenedor-carrusel">
+                            <div id="carrusel-2" class="carrusel">
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/dinochrome.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/disneypuzzle.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/eatsrockets.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/eggfighter.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/extrememotogp.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/findinmind.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/fivedaysatfreaky.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/fivenightsatfriday.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/gardenrabbits.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/ghostfight.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/gokartgo.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/gokuvshulk.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/gokuvszombies.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/hellokittyandfriends.png" alt=""></a>
+                                </div>
+                                <div class="juego">
+                                    <a href="#"><img src="../css/images/imagenes_carrusel/hunter3d.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <button role="button" id="flecha-derecha-2" class="flecha-derecha">&#10095</button>
+                    </div>
+                </div>
+            </section>
+            <!--CUATRO EN LINEA-> FOOTER-->
+			<footer class="fatFooter">
+				<ul>
+					<a href="../index.html"><img src="../css/images/images/logoSuperJuegos.png" href="../index.html"></a>
+				</ul>
+				<ul>
+					<li>General</li>
+					<li>Caracteristicas de juegos</li>
+					<li>Mapa del sitio</li>
+					<li>Home</li>
+				</ul>
+				<ul>
+					<li>Informacion</li>
+					<li>Condiciones de uso</li>
+					<li>Referencia de cookies</li>
+					<li>Privacidad</li>
+					<li>Políticas de Privacidad</li>
+					<li>Informacion para los padres</li>
+					<li>Ayuda</li>
+				</ul>
+				<ul>
+					<li>Idiomas</li>
+					<li>Español</li>
+					<li>Ingles</li>
+					<li>Portugues</li>
+					<li>Frances</li>
+					<li>Aleman</li>
+					<li>Italiano</li>
+				</ul>
+				<ul>
+					<li>Sobre nosotros</li>
+					<li>Desarrolladores</li>
+					<li>Contacto</li>
+					<li>support@superjuegos.com</li>
+					<li>Subscribite</li>
+				</ul>
+				<ul>
+					<li>Comunidad</li>
+					<li>Foro</li>
+					<li>Blog</li>
+					<div>
+						<img src="../css/images/images/tik-tok.png" alt="">
+						<img src="../css/images/images/instagram.png" alt="">
+						<img src="../css/images/images/facebook.png" alt="">
+					</div>
+				</ul>
+				<ul id="scrollToTop">
+					<img src="../css/images/images/angulo-hacia-arriba.png" alt="" >
+				</ul>
+			</footer>
+		</div>
+	</body>
+	
+    <script src="../js/cuatroEnLinea.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/loader.js"></script>
+    <script src="../js/4enlinea/Casillero.js"></script>
+    <script src="../js/4enlinea/Ficha.js"></script>
+    <script src="../js/4enlinea/Tablero.js"></script>
+    <script src="../js/4enlinea/Juego.js"></script>
+    <script src="../js/4enlinea/Timer.js"></script>
+
+</html>
